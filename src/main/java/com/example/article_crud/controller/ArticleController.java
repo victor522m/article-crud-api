@@ -19,7 +19,7 @@ public class ArticleController {
         this.articleRepository = articleRepository;
     }
 
-    // GET - Obtener todos los artículos
+    // GET - Obtener todos los artículos. 
     @GetMapping
     @Transactional(readOnly = true)
     public List<Article> getAllArticles() {
